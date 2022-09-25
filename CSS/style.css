@@ -1,11 +1,11 @@
 body {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: center;
 }
 
 .container {
-  background-color: grey;
+  /* background-color: grey; */
   height: 91vh;
   width: 91vw;
 }
@@ -15,8 +15,8 @@ body {
   justify-content: center;
   position: fixed;
   margin: 1vh 1vw 1vh 1vw;
-  height: 89vh;
-  width: 89vw;
+  height: 90vh;
+  width: 90vw;
   border-radius: 20px;
 }
 
@@ -34,6 +34,8 @@ body {
   background-color: aqua;
   display: grid;
   position: fixed;
+  align-items: center;
+  text-align: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   height: 30vh;
@@ -43,23 +45,36 @@ body {
 
 #j-top {
   background-color: rgb(0, 185, 185);
-  grid-column: 2/3
+  grid-column: 2/2;
+  grid-row: 1/1;
+}
+#j-rgt {
+  background-color: rgb(0, 185, 185);
+  grid-column: 3/3;
+  grid-row: 2/2;
 }
 
 #j-mid {
   background-color: rgb(0, 134, 134);
-  grid-row: 2/3;
-  grid-column: 1/4
+  grid-row: 2/2;
+  grid-column: 2/2;
 }
 
 #j-bot {
   background-color: rgb(0, 95, 95);
-  grid-column: 2/3
+  grid-column: 2/2;
+  grid-row: 3/3;
+}
+#j-lft{
+  grid-column: 1/1;
+  grid-row: 2/2;
 }
 
 .buttons {
   display: grid;
   position: fixed;
+  text-align: center;
+  align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   background-color: rgb(197, 134, 255);
@@ -142,8 +157,10 @@ body {
 }
 
 #bordes {
-  background-color: lawngreen;
+  /* background-color: lawngreen; */
   position: fixed;
+  height: 92vh;
+  width: 92vw;
 }
 
 .top {
@@ -153,19 +170,19 @@ body {
 }
 
 #top_lft {
-  background-color: rgb(96, 192, 1);
+  background-color: black;
   height: 10vh;
   width: 15vw;
 }
 
 #top_cen {
-  background-color: rgb(73, 145, 1);
+  background-color: darkred;
   height: 10vh;
-  width: 61vw;
+  width: 62vw;
 }
 
 #top_rgt {
-  background-color: rgb(43, 87, 0);
+  background-color: black;
   height: 10vh;
   width: 15vw;
 }
@@ -176,9 +193,9 @@ body {
 }
 
 .bot {
-  background-color: rgb(17, 34, 0);
-  height: 81vh;
-  width: 91vw;
+  background-color: darkred;
+  height: 82vh;
+  width: 92vw;
   border-radius: 20px;
 }
 
