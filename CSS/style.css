@@ -32,7 +32,7 @@ body {
 }
 
 #joystick {
-  background-color: aqua;
+  /* background-color: aqua; */
   display: grid;
   position: fixed;
   align-items: center;
@@ -45,30 +45,43 @@ body {
 }
 
 #j-top {
-  background-color: rgb(0, 185, 185);
+  background-color: black;
   grid-column: 2/2;
   grid-row: 1/1;
+  height: 10vh;
+  width: 14.67vh;
 }
+
 #j-rgt {
-  background-color: rgb(0, 185, 185);
+  background-color: black;
   grid-column: 3/3;
   grid-row: 2/2;
+  height: 10vh;
+  width: 14.67vh;
 }
 
 #j-mid {
-  background-color: rgb(0, 134, 134);
-  grid-row: 2/2;
+  background-color: black;
   grid-column: 2/2;
+  grid-row: 2/2;
+  height: 10vh;
+  width: 14.67vh;
 }
 
 #j-bot {
-  background-color: rgb(0, 95, 95);
+  background-color: black;
   grid-column: 2/2;
   grid-row: 3/3;
+  height: 10vh;
+  width: 14.67vh;
 }
-#j-lft{
+
+#j-lft {
+  background-color: black;
   grid-column: 1/1;
   grid-row: 2/2;
+  height: 10vh;
+  width: 7.38vw;
 }
 
 .buttons {
@@ -76,52 +89,66 @@ body {
   position: fixed;
   text-align: center;
   align-items: center;
+  justify-content: center;
+  justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  background-color: rgb(197, 134, 255);
-  height: 40vh;
+  /* background-color: rgb(197, 134, 255); */
+  height: 52vh;
   width: 30vw;
-  margin: 15vh 0vw 0vh 55vw;
+  margin: 22vh 0vw 0vh 55vw;
 }
 
 #X {
-  background-color: rgb(163, 98, 224);
-  grid-row: 1/3;
+  background: linear-gradient(45deg, grey, black);
   grid-column: 2/3;
+  grid-row: 1/2;
+  height: 16vh;
+  width: 8vw;
+  border-radius: 100px;
+  
 }
 
 #A {
-  background-color: rgb(163, 108, 214);
-  grid-row: 2/3;
+  background: linear-gradient(45deg, grey, black);
   grid-column: 3/3;
+  grid-row: 2/3;
+  height: 16vh;
+  width: 8vw;
+  border-radius: 100px
 }
 
 #B {
-  background-color: rgb(93, 39, 143);
-  grid-row: 3/3;
+  background: linear-gradient(45deg, grey, black);
   grid-column: 2/3;
+  grid-row: 3/3;
+  height: 16vh;
+  width: 8vw;
+  border-radius: 100px
 }
 
 #Y {
-  background-color: rgb(74, 29, 116);
-  grid-row: 2/3;
+  background: linear-gradient(45deg, grey, black);
   grid-column: 1/1;
+  grid-row: 2/3;
+  height: 16vh;
+  width: 8vw;
+  border-radius: 100px
 }
 
 #cntr {
-  background-color: rgb(51, 26, 75);
-  grid-row: 2/3;
+  /* background-color: rgb(51, 26, 75); */
   grid-column: 2/3;
+  grid-row: 2/3;
+  height: 13.7vh;
+  width: 10vw;
 }
 
 #funciones {
-  background-color: green;
-  justify-content: center;
   position: fixed;
-  align-items: center;
-  height: 12vh;
-  width: 14vw;
-  margin: 55vh 1vw 0vh 30vw;
+  height: 15vh;
+  width: 20vw;
+  margin: 55vh 0vw 0vh 31vw;
 }
 
 #funciones-symbolos {
@@ -131,32 +158,37 @@ body {
 }
 
 #funciones-botones {
+  position: fixed;
   display: flex;
-  align-items: center;
-  text-align: center
+  height: 15vh;
+  width: 15vw;
+  border-radius: 10%;
+  justify-content: space-between;
+  margin: 2.5vh 0vw 0vh 2.5vw;
+
 }
 
 #start {
-  background-color: rgb(3, 85, 3);
-  height: 10vh;
-  width: 15vw;
-  
+  background-color: rgb(146, 85, 85);
+  height: 5vh;
+  width: 5vw;
+
 }
 
 #txt-select {
   height: 5vh;
-  width: 15vw;
+  width: 14vw;
+}
+
+#select {
+  background-color: rgb(148, 74, 74);
+  height: 5vh;
+  width: 5vw;
 }
 
 #txt-start {
   height: 5vh;
-  width: 15vw;
-}
-
-#select {
-  background-color: rgb(0, 68, 0);
-  height: 10vh;
-  width: 15vw;
+  width: 14vw;
 }
 
 #bordes {
@@ -168,25 +200,31 @@ body {
 
 .top {
   display: flex;
-  border-radius: 20px;
 }
 
 #top_lft {
   background-color: black;
   height: 10vh;
   width: 15vw;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 5%;
 }
 
 #top_cen {
   background-color: rgb(97, 0, 0);
   height: 10vh;
   width: 62vw;
+  border-radius: 8%;
 }
 
 #top_rgt {
   background-color: black;
   height: 10vh;
   width: 15vw;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 10%;
+  border-bottom-right-radius: 5%;
 }
 
 #top_bot {
@@ -203,11 +241,11 @@ body {
 
 #fondo-rome-i {
   background-color: black;
-  color: aliceblue;
+  color: goldenrod;
   position: fixed;
   height: 13vh;
   width: 6vw;
-  margin: 3%;
+  margin: 5%;
   align-items: center;
 
 }
@@ -221,30 +259,32 @@ body {
   display: flex;
   position: fixed;
   border-radius: 20px;
-  height: 18vh;
-  width: 18vw;
-  margin: 54vh 1vw 1vh 29vw;
+  height: 11vh;
+  width: 25vw;
+  margin: 59.5vh 0vw 0vh 31vw;
 }
 
 #fondo-mid-lft {
-  background-color: rgb(0, 0, 219);
-  height: 17vh;
-  width: 2vw;
-  border-radius: 10px;
+  background-color: rgb(97, 0, 0);
+  height: 11vh;
+  width: 5vw;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
 }
 
 #fondo-mid-mid {
-  background-color: rgb(0, 0, 126);
-  height: 17vh;
-  width: 12vw;
-  border-radius: 10px;
+  background-color: rgb(97, 0, 0);
+  height: 11vh;
+  width: 10vw;
+
 }
 
 #fondo-mid-rgt {
-  background-color: rgb(0, 0, 68);
-  height: 17vh;
-  width: 2vw;
-  border-radius: 10px;
+  background-color: rgb(97, 0, 0);
+  height: 11vh;
+  width: 5vw;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 #trim {
@@ -256,7 +296,7 @@ body {
   margin: 1%
 }
 
-#color-gold1{
+#color-gold1 {
   background-color: goldenrod;
   grid-column: 1/3;
   grid-row: 1/6;
@@ -264,16 +304,36 @@ body {
   border-top-left-radius: 5%;
   border-bottom-left-radius: 5%;
 }
-#color-gold2{
+
+#color-gold2 {
   background-color: goldenrod;
   grid-column: 3/5;
   grid-row: 3/6;
   border-top-right-radius: 5%;
   border-end-end-radius: 5%;
 }
-#color-burdeos{
+
+#color-burdeos {
   background-color: red;
   border-bottom-left-radius: 5%;
   grid-column: 3/5;
   grid-row: 1/3;
+}
+#shade1 {
+  position: fixed;
+  height: 10vh;
+  width: 90vw;
+  margin: 1vh 2.2vw 0 0;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 10%;
+  border-bottom-left-radius: 5%;
+  background: linear-gradient(45deg, grey, black);
+}
+#shade2 {
+  /* position: fixed; */
+  height: 82vh;
+  width: 92vw;
+  border-radius: 20px;
+  margin: 11vh 0.5vh 0 0;
+  background: linear-gradient(45deg, grey, black);
 }
