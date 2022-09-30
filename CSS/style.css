@@ -1,38 +1,36 @@
 body {
-  /* background-color: rgb(255, 255, 255); */
   display: flex;
   justify-content: center;
 }
 
 .container {
-  /* background-color: grey; */
   height: 91vh;
   width: 91vw;
   position: fixed;
 }
 
 .controller {
-  background-color: darkred;
   justify-content: center;
   position: fixed;
   margin: 1vh 1vw 1vh 1vw;
   height: 90vh;
   width: 90vw;
   border-radius: 20px;
+  box-shadow: 0px 0px 0px 0px darkred;
 }
 
 .skull {
-  background-color: red;
+  background: linear-gradient(rgb(175, 0, 0), rgb(129, 0, 0));
   display: flex;
   position: fixed;
-  height: 88vh;
+  height: 87vh;
   width: 88vw;
   margin: 1vh 1vw 1vh 1vw;
   border-radius: 20px;
+  border: 0.5px solid black;
 }
 
 #joystick {
-  /* background-color: aqua; */
   display: grid;
   position: fixed;
   align-items: center;
@@ -45,44 +43,89 @@ body {
 }
 
 #j-top {
-  background-color: black;
+  display: flex;
+  justify-content: center;
   grid-column: 2/2;
   grid-row: 1/1;
   height: 10vh;
   width: 14.67vh;
+  border-top: 5px solid rgb(110, 0, 55);
+  border-left: 5px solid rgb(110, 0, 55);
+  border-right: 5px solid rgb(110, 0, 55);
+}
+
+#up-arrow {
+  background: linear-gradient(black, grey);
+  width: 8vw;
+}
+
+#rgt-arrow {
+  background: linear-gradient(90deg, grey, black);
+  width: 8vw;
+}
+
+#bot-arrow {
+  background: linear-gradient(grey, black);
+  width: 8vw;
+}
+
+#lft-arrow {
+  background: linear-gradient(90deg, black, grey);
+  width: 8vw;
+}
+
+
+#cen-arrow {
+  background-color: gray;
+  width: 8vw;
+
 }
 
 #j-rgt {
-  background-color: black;
+  display: flex;
+  justify-content: center;
   grid-column: 3/3;
   grid-row: 2/2;
   height: 10vh;
   width: 14.67vh;
+  border-top: 5px solid rgb(110, 0, 55);
+  border-right: 5px solid rgb(110, 0, 55);
+  border-bottom: 5px solid rgb(110, 0, 55);
 }
 
 #j-mid {
-  background-color: black;
+  display: flex;
+  justify-content: center;
   grid-column: 2/2;
   grid-row: 2/2;
-  height: 10vh;
-  width: 14.67vh;
+  height: 11vh;
+  width: 15.8vh;
 }
 
 #j-bot {
-  background-color: black;
+  display: flex;
+  justify-content: center;
   grid-column: 2/2;
   grid-row: 3/3;
   height: 10vh;
   width: 14.67vh;
+  border-bottom: 5px solid rgb(110, 0, 55);
+  border-left: 5px solid rgb(110, 0, 55);
+  border-right: 5px solid rgb(110, 0, 55);
 }
 
 #j-lft {
-  background-color: black;
+  display: flex;
+  justify-content: center;
   grid-column: 1/1;
   grid-row: 2/2;
   height: 10vh;
-  width: 7.38vw;
+  width: 14.67vh;
+  border-top: 5px solid rgb(110, 0, 55);
+  border-left: 5px solid rgb(110, 0, 55);
+  border-bottom: 5px solid rgb(110, 0, 55);
 }
+
 
 .buttons {
   display: grid;
@@ -93,51 +136,85 @@ body {
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  /* background-color: rgb(197, 134, 255); */
   height: 52vh;
   width: 30vw;
   margin: 22vh 0vw 0vh 55vw;
 }
 
 #X {
-  background: linear-gradient(45deg, grey, black);
+  display: flex;
+  justify-content: center;
   grid-column: 2/3;
   grid-row: 1/2;
   height: 16vh;
   width: 8vw;
   border-radius: 100px;
-  
+  border: 10px solid rgb(110, 0, 55);
+
+}
+
+#x1 {
+  background: linear-gradient(45deg, grey, black);
+  border-radius: 50%;
+  width: 8vw;
+  border: 3px solid black;
 }
 
 #A {
-  background: linear-gradient(45deg, grey, black);
+  display: flex;
+  justify-content: center;
   grid-column: 3/3;
   grid-row: 2/3;
   height: 16vh;
   width: 8vw;
-  border-radius: 100px
+  border-radius: 100px;
+  border: 10px solid rgb(110, 0, 55);
+}
+
+#a1 {
+  background: linear-gradient(45deg, grey, black);
+  border-radius: 50%;
+  width: 8vw;
+  border: 3px solid black;
 }
 
 #B {
-  background: linear-gradient(45deg, grey, black);
+  display: flex;
+  justify-content: center;
   grid-column: 2/3;
   grid-row: 3/3;
   height: 16vh;
   width: 8vw;
-  border-radius: 100px
+  border-radius: 100px;
+  border: 10px solid rgb(110, 0, 55);
+}
+
+#b1 {
+  background: linear-gradient(45deg, grey, black);
+  border-radius: 50%;
+  width: 8vw;
+  border: 3px solid black;
 }
 
 #Y {
-  background: linear-gradient(45deg, grey, black);
+  display: flex;
+  justify-content: center;
   grid-column: 1/1;
   grid-row: 2/3;
   height: 16vh;
   width: 8vw;
-  border-radius: 100px
+  border-radius: 100px;
+  border: 10px solid rgb(110, 0, 55);
+}
+
+#y1 {
+  background: linear-gradient(45deg, grey, black);
+  border-radius: 50%;
+  width: 8vw;
+  border: 3px solid black;
 }
 
 #cntr {
-  /* background-color: rgb(51, 26, 75); */
   grid-column: 2/3;
   grid-row: 2/3;
   height: 13.7vh;
@@ -145,6 +222,7 @@ body {
 }
 
 #funciones {
+  z-index: 3;
   position: fixed;
   height: 15vh;
   width: 20vw;
@@ -165,14 +243,16 @@ body {
   border-radius: 10%;
   justify-content: space-between;
   margin: 2.5vh 0vw 0vh 2.5vw;
-
 }
 
 #start {
-  background-color: rgb(146, 85, 85);
+  background-color: rgb(44, 44, 44);
   height: 5vh;
   width: 5vw;
-
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  border: 3px solid black;
 }
 
 #txt-select {
@@ -181,9 +261,13 @@ body {
 }
 
 #select {
-  background-color: rgb(148, 74, 74);
+  background-color: rgb(44, 44, 44);
   height: 5vh;
   width: 5vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 10%;
+  border: 3px solid black;
 }
 
 #txt-start {
@@ -192,7 +276,6 @@ body {
 }
 
 #bordes {
-  /* background-color: lawngreen; */
   position: fixed;
   height: 92vh;
   width: 92vw;
@@ -209,10 +292,12 @@ body {
   border-top-left-radius: 30%;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 5%;
+  margin-left: 1vw;
 }
 
 #top_cen {
-  background-color: rgb(97, 0, 0);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2OrdhVSP7Vvv64AHOZG4dYXtbkT0J2dtPMA&usqp=CAU);
+  background-size: cover;
   height: 10vh;
   width: 62vw;
   border-radius: 8%;
@@ -225,6 +310,7 @@ body {
   border-top-right-radius: 30%;
   border-top-left-radius: 10%;
   border-bottom-right-radius: 5%;
+  margin-right: 1vw;
 }
 
 #top_bot {
@@ -233,10 +319,12 @@ body {
 }
 
 .bot {
-  background-color: rgb(97, 0, 0);
-  height: 82vh;
-  width: 92vw;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2OrdhVSP7Vvv64AHOZG4dYXtbkT0J2dtPMA&usqp=CAU);
+  background-size: cover;
+  height: 80vh;
+  width: 90vw;
   border-radius: 20px;
+  margin-left: 1vw;
 }
 
 #fondo-rome-i {
@@ -247,7 +335,6 @@ body {
   width: 6vw;
   margin: 5%;
   align-items: center;
-
 }
 
 #I {
@@ -259,46 +346,55 @@ body {
   display: flex;
   position: fixed;
   border-radius: 20px;
-  height: 11vh;
+  height: 10.5vh;
   width: 25vw;
   margin: 59.5vh 0vw 0vh 31vw;
 }
 
 #fondo-mid-lft {
-  background-color: rgb(97, 0, 0);
-  height: 11vh;
+  background: linear-gradient(rgb(97, 0, 0), black);
+  height: 10.5vh;
   width: 5vw;
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #fondo-mid-mid {
-  background-color: rgb(97, 0, 0);
-  height: 11vh;
+  background: linear-gradient(rgb(97, 0, 0), black);
+  height: 10.5vh;
   width: 10vw;
-
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #fondo-mid-rgt {
-  background-color: rgb(97, 0, 0);
-  height: 11vh;
+  background: linear-gradient(rgb(97, 0, 0), black);
+  height: 10.5vh;
   width: 5vw;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
 }
 
 #trim {
   display: grid;
+  background-image: url(https://eda.gallery/wp-content/uploads/2020/08/placa-de-oro-edited.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 3/5;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 20vh 20vh 20vh 1fr 20vh;
   height: 83vh;
   width: 88vw;
-  margin: 1%
+  margin: 2vh 1vw 1vh 1vw;
+  border-radius: 2%;
+  border: 2px solid black;
 }
 
 #color-gold1 {
-  background-color: goldenrod;
-  grid-column: 1/3;
   grid-row: 1/6;
   border-top-right-radius: 5%;
   border-top-left-radius: 5%;
@@ -306,34 +402,54 @@ body {
 }
 
 #color-gold2 {
-  background-color: goldenrod;
-  grid-column: 3/5;
   grid-row: 3/6;
   border-top-right-radius: 5%;
   border-end-end-radius: 5%;
+
 }
 
 #color-burdeos {
-  background-color: red;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2OrdhVSP7Vvv64AHOZG4dYXtbkT0J2dtPMA&usqp=CAU);
+  background-size: cover;
+  opacity: unset;
   border-bottom-left-radius: 5%;
+  border-top-right-radius: 3%;
   grid-column: 3/5;
   grid-row: 1/3;
 }
+
 #shade1 {
   position: fixed;
   height: 10vh;
   width: 90vw;
-  margin: 1vh 2.2vw 0 0;
+  margin: 1vh 2vw;
   border-top-left-radius: 30%;
   border-top-right-radius: 10%;
   border-bottom-left-radius: 5%;
   background: linear-gradient(45deg, grey, black);
 }
+
 #shade2 {
-  /* position: fixed; */
-  height: 82vh;
-  width: 92vw;
+  position: fixed;
+  height: 80vh;
+  width: 90vw;
   border-radius: 20px;
-  margin: 11vh 0.5vh 0 0;
+  margin: 11vh 0.5vh;
   background: linear-gradient(45deg, grey, black);
+}
+
+#line1 {
+  background-color: black;
+  position: fixed;
+  height: 0.5vh;
+  width: 85.8vw;
+  margin-top: 65vh;
+}
+
+#line2 {
+  background-color: black;
+  position: fixed;
+  height: 0.5vh;
+  width: 85.8vw;
+  margin-top: 63vh;
 }
